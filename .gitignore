@@ -9,6 +9,7 @@ coverage
 # production
 build
 html/bundle.js
+html/CNAME
 # misc
 .DS_Store
 .env

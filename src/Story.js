@@ -16,15 +16,6 @@ import { getChosenStory } from './selectors';
 
 const localDateTime = unixtime => {
   const newDate = new Date(1000 * unixtime);
-  /*
-  return newDate.toLocaleDateString(undefined, {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric'
-  });
-  */
   return newDate.toDateString() + ' ' + newDate.toTimeString();
 };
 
@@ -34,41 +25,6 @@ const domainFromUrl = url => {
   return link.hostname;
 };
 
-/*
-const Story = ({
-  id,
-  title,
-  by,
-  score,
-  time,
-  descendants,
-  url,
-  chooseStory,
-  showModal,
-  chosen
-}) =>
-  id === chosen ? (
-    <ListItem twoLine>
-      <ListItemContent
-        subtitle={`${score} points by ${by} at ${localDateTime(time)}; ${
-          descendants
-        } comments:`}
-      >
-        <span onClick={() => showModal(url)}>
-          {title} ({url})
-        </span>
-      </ListItemContent>
-    </ListItem>
-  ) : (
-    <ListItem>
-      <ListItemContent avatar="web">{title}</ListItemContent>
-      <ListItemAction>
-        <Icon name="arrow forward" onClick={() => chooseStory(id)} />
-      </ListItemAction>
-    </ListItem>
-  );
-  */
-
 const cardStyle = {
   width: '95%',
   margin: 'auto',
@@ -76,7 +32,7 @@ const cardStyle = {
   minHeight: '1px'
 };
 const cardMenuStyle = { color: '#795548' };
-const Story = ({
+export const Story = ({
   id,
   title,
   by,
