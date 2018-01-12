@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 const config = {
-    entry: './src/index.js',
+    entry: ['babel-polyfill', './src/index.js'],
     output: {
         path: path.resolve(__dirname, 'html'),
         filename: 'bundle.js'
@@ -13,6 +13,10 @@ const config = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     }
