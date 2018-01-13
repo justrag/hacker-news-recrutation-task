@@ -6,7 +6,7 @@ import {
   getStoriesArr,
   getLoaded,
   getLoadingProgress
-} from './selectors';
+} from '../selectors/';
 import Story from './Story';
 
 const APIError = () => (
@@ -27,7 +27,7 @@ const LoadingProgress = ({ progress }) => (
 const withLoadingProgressHOC = Component => ({ loaded, progress, ...rest }) =>
   loaded ? <Component {...rest} /> : <LoadingProgress progress={progress} />;
 
-const Stories = ({ stories }) => (
+export const Stories = ({ stories }) => (
   <div>{stories.map(story => <Story key={story.id} {...story} />)}</div>
 );
 

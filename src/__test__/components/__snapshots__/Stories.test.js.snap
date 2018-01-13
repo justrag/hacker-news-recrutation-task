@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Stories renders correctly 1`] = `
+<div>
+  <Connect(Story)
+    id={42}
+    key="42"
+    title="The answer"
+  />
+  <Connect(Story)
+    id={44}
+    key="44"
+    title="Old heroes in his blood"
+  />
+</div>
+`;

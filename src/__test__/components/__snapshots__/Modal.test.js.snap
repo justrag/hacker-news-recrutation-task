@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Modal renders the hidden modal 1`] = `null`;
+
+exports[`Component: Modal renders the showing modal 1`] = `
+<div
+  class="mdl-layout__content"
+  style="position:fixed;background-color:#795548;z-index:1;left:2%;top:10%;width:95%;height:90%;border:thin solid darkgrey"
+>
+  <button
+    class="mdl-button mdl-js-button mdl-button--colored mdl-button--icon"
+    style="float:right"
+  >
+    <i
+      class="material-icons"
+    >
+      close
+    </i>
+  </button>
+  <iframe
+    src="http://7thguard.net"
+    style="background-color:#fefefe;margin:15px auto;padding:10px;border:1px solid #888;width:90%;height:90%;display:block"
+  />
+</div>
+`;

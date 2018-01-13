@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Story renders the chosen story correctly 1`] = `
+<div
+  class="mdl-card mdl-shadow--6dp"
+  style="width:95%;margin:auto;margin-bottom:10px;min-height:1px"
+>
+  <div
+    class="mdl-card__title"
+  >
+    <h2
+      class="mdl-card__title-text"
+    >
+      Economics is overdue for a quantum revolution
+    </h2>
+  </div>
+  <div
+    class="mdl-card__supporting-text"
+  >
+    <i
+      class="material-icons mdl-badge mdl-badge--overlap"
+      data-badge="12"
+    >
+      favorite
+    </i>
+    <i
+      class="material-icons mdl-badge mdl-badge--overlap"
+      data-badge="3"
+    >
+      comment
+    </i>
+    <i
+      class="material-icons"
+    >
+      person
+    </i>
+     tgragnato 
+    <i
+      class="material-icons"
+    >
+      date_range
+    </i>
+     Tue Jan 09 2018 01:57:15 GMT+0100 (CET)
+  </div>
+  <div
+    class="mdl-card__actions mdl-card--border"
+  >
+    <button
+      class="mdl-button mdl-js-button mdl-button--colored"
+    >
+      aeon.co
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Component: Story renders the regular story correctly 1`] = `
+<div
+  class="mdl-card mdl-shadow--3dp"
+  style="width:95%;margin:auto;margin-bottom:10px;min-height:1px"
+>
+  <div
+    class="mdl-card__supporting-text"
+  >
+    Economics is overdue for a quantum revolution
+  </div>
+  <div
+    class="mdl-card__menu"
+    style="color:#795548"
+  >
+    <button
+      class="mdl-button mdl-js-button mdl-button--icon"
+    >
+      <i
+        class="material-icons"
+      >
+        arrow_back
+      </i>
+    </button>
+  </div>
+</div>
+`;

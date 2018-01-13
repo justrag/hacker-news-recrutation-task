@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:cleansnapshots": "jest -u",
     "dist": "webpack"
   },
   "keywords": [],
@@ -19,17 +22,21 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.8",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.0",
     "jest": "^22.0.6",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-test-renderer": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-mdl": "^1.11.0",
     "react-redux": "^5.0.6",
+    "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1"

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: App renders correctly 1`] = `
+<div>
+  <Layout
+    fixedHeader={true}
+    style={
+      Object {
+        "background": "url(Atari-800xl.jpg) center / cover",
+      }
+    }
+  >
+    <Header
+      title={
+        <span
+          style={
+            Object {
+              "color": "#ddd",
+            }
+          }
+        >
+          HackerNews
+        </span>
+      }
+    />
+    <Connect(Component) />
+    <Connect(Modal) />
+    <Footer
+      size="mini"
+    >
+      <span>
+        made by rag in 2018
+      </span>
+    </Footer>
+  </Layout>
+</div>
+`;

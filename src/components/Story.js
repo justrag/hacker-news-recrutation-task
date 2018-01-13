@@ -11,8 +11,8 @@ import {
   Button,
   CardMenu
 } from 'react-mdl';
-import { chooseStory, showModal } from './actions';
-import { getChosenStory } from './selectors';
+import { chooseStory, showModal } from '../actions/';
+import { getChosenStory } from '../selectors/';
 
 const localDateTime = unixtime => {
   const newDate = new Date(1000 * unixtime);
