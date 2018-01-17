@@ -17,9 +17,9 @@ import {
   GET_STORY_FAILURE
 } from '../constants/';
 
-const getJson = url => fetch(url).then(resp => resp.json());
+export const getJson = url => fetch(url).then(resp => resp.json());
 
-function* loadStory({ id }) {
+export function* loadStory({ id }) {
   try {
     const story = yield call(
       getJson,
@@ -31,13 +31,13 @@ function* loadStory({ id }) {
   }
 }
 
-function* loadList() {
+export function* loadList() {
   try {
     const fullList = yield call(
       getJson,
       'https://hacker-news.firebaseio.com/v0/topstories.json'
     );
-    const list = fullList.slice(0, 50);
+    const list = fullList.slice(0, 25);
     yield put(getListSuccess(list));
     yield list.map(id => put(getStoryRequest(id)));
   } catch (error) {
