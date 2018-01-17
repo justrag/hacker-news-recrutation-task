@@ -16,7 +16,7 @@ export const getListFailure = apiError => ({
   type: GET_LIST_FAILURE,
   apiError
 });
-export const getStoryRequest = () => ({ type: GET_STORY_REQUEST });
+export const getStoryRequest = id => ({ type: GET_STORY_REQUEST, id });
 export const getStorySuccess = payload => ({
   type: GET_STORY_SUCCESS,
   payload
